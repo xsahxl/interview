@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .flex-direction div {
+            height: 300px;
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        .flex-direction p {
+            width: 50px;
+            height: 50px;
+            margin: 0;
+            border: 1px solid yellow;
+        }
+
+        .flex-wrap div {
+            height: 300px;
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        .flex-wrap p {
+            width: 120px;
+            height: 150px;
+            margin: 0;
+            border: 1px solid yellow;
+        }
+
+        .just-content div {
+            height: 300px;
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        .just-content p {
+            width: 50px;
+            height: 50px;
+            margin: 0;
+            border: 1px solid yellow;
+        }
+
+        .align-items div {
+            height: 300px;
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        .align-items p {
+            width: 50px;
+            margin: 0;
+            border: 1px solid yellow;
+        }
+
+        .items div {
+            height: 300px;
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        .items p {
+            margin: 0;
+            border: 1px solid yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>容器的属性</h1>
+    <span>flex-direction, flex-wrap, flex-flow, justify-content, align-items, align-content</span>
+
+    <div class="flex-direction">
+        <h1>flex-direction default value is row</h1>
+        <div style="display: flex; flex-direction: row;">
+            <p>item1</p>
+            <p>item2</p>
+            <p>item3</p>
+        </div>
+        <h1>flex-direction value is row-reverse</h1>
+        <div style="display: flex; flex-direction: row-reverse;">
+            <p>item1</p>
+            <p>item2</p>
+            <p>item3</p>
+        </div>
+        <h1>flex-direction value is column</h1>
+        <div style="display: flex; flex-direction: column;">
+            <p>item1</p>
+            <p>item2</p>
+            <p>item3</p>
+        </div>
+        <h1>flex-direction value is column-reverse</h1>
+        <div style="display: flex; flex-direction: column-reverse;">
+            <p>item1</p>
+            <p>item2</p>
+            <p>item3</p>
+        </div>
+    </div>
+
+    <div class="flex-wrap">
+        <h1>flex-wrap default value is nowrap</h1>
+        <div style="display: flex; flex-wrap: nowrap;">
+            <p>我是第一列我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+        <h1>flex-wrap value is wrap</h1>
+        <div style="display: flex; flex-wrap: wrap;">
+            <p>我是第一列我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+        <h1>flex-wrap value is wrap-reverse</h1>
+        <div style="display: flex; flex-wrap: wrap-reverse;">
+            <p>我是第一列我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+    </div>
+
+    <h1>flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。</h1>
+
+
+    <div class="just-content">
+        <h1>just-content default value is flex-start</h1>
+        <div style="display: flex; justify-content: flex-start;">
+            <p>我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+        <h1>just-content value is flex-end</h1>
+        <div style="display: flex; justify-content: flex-end;">
+            <p>我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+        <h1>just-content value is center</h1>
+        <div style="display: flex; justify-content: center;">
+            <p>我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+        <h1>just-content value is space-between</h1>
+        <div style="display: flex; justify-content: space-between;">
+            <p>我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+
+        <h1>just-content value is space-around</h1>
+        <div style="display: flex; justify-content: space-around;">
+            <p>我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+
+
+    </div>
+
+    <div class="align-items">
+        <h1>align-items default value is stretch</h1>
+        <div style="display: flex; align-items: stretch">
+            <p>我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+
+        <h1>align-items value is flex-start</h1>
+        <div style="display: flex; align-items: flex-start">
+            <p>我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+
+        <h1>align-items value is flex-end</h1>
+        <div style="display: flex; align-items: flex-end">
+            <p>我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+
+        <h1>align-items value is center</h1>
+        <div style="display: flex; align-items: center">
+            <p>我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+
+        <h1>align-items value is baseline</h1>
+        <div style="display: flex; align-items: baseline">
+            <p>我是第一列</p>
+            <p>我是第二列</p>
+            <p>我是第三列</p>
+        </div>
+
+
+    </div>
+    <h1>项目的属性</h1>
+    <p>order, flex-grow, flex-shrink, flex-basis, flex, align-self</p>
+    <div>
+        <p>order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。</p>
+        <p>flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。</p>
+        <p>flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。</p>
+        <p>flex-basis是什么：给grow、shrink分配多余空间之前, 计算项目是否有多余空间，给予元素一个初始值宽度</p>
+        <p>align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。</p>
+
+        <p>flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。</p>
+        <p>当 flex 取值为 none，则计算值为 0 0 auto</p>
+        <p>当 flex 取值为 auto，则计算值为 1 1 auto</p>
+        <p>当 flex 取值为一个非负数字，则该数字为 flex-grow 值，flex-shrink 取 1，flex-basis 取 0%</p>
+        <p>当 flex 取值为一个长度或百分比，则视为 flex-basis 值，flex-grow 取 1，flex-shrink 取 1，有如下等同情况（注意 0% 是一个百分比而不是一个非负数字）：</p>
+        <p>当 flex 取值为两个非负数字，则分别视为 flex-grow 和 flex-shrink 的值，flex-basis 取 0%，</p>
+        <p>当 flex 取值为一个非负数字和一个长度或百分比，则分别视为 flex-grow 和 flex-basis 的值，flex-shrink 取 1，</p>
+    </div>
+
+    <h1>举一个不同的值之间的区别：</h1>
+    <div style="display: flex; width: 600px;">
+        <div style="height:100px; width: 140px; flex: 2 1 0%; background: blue;"></div>
+        <div style="height:100px; width: 100px; flex: 2 1 auto; background: red;"></div>
+        <div style="height: 100px; flex: 1 1 200px; background: yellow;"></div>
+    </div>
+    <div>
+        主轴上父容器总尺寸为 600px
+        <br>
+        子元素的总基准值是：0% + auto + 200px = 300px，其中
+        <br>
+        0% 即 0 宽度
+        <br>
+        auto 对应取主尺寸即 100px
+        <br>
+        故剩余空间为 600px - 300px = 300px
+        <br>
+        伸缩放大系数之和为： 2 + 2 + 1 = 5
+        <br>
+        剩余空间分配如下：
+        <br>
+        item-1 和 item-2 各分配 2/5，各得 120px
+        <br>
+        item-3 分配 1/5，得 60px
+        <br>
+        各项目最终宽度为：
+        <br>
+        item-1 = 0% + 120px = 120px
+        <br>
+        item-2 = auto + 120px = 220px
+        <br>
+        item-3 = 200px + 60px = 260px
+    </div>
+
+</body>
+
+</html>
