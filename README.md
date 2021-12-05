@@ -16,3 +16,4 @@
 
 2. display: flex
 3. 手写代码实现一个 Promise.all 方法
+4. keep-alive 组件有什么作用？
